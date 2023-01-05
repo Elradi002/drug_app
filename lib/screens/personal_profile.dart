@@ -78,6 +78,25 @@ class PersonalProfile extends StatelessWidget {
             Row(
               children: const [
                 Icon(
+                  Icons.password,
+                  color: Colors.grey,
+                  size: 25,
+                ),
+                SizedBox(
+                  width: 5,
+                ),
+                Text(
+                  'تغيير كلمة المرور',
+                  style: kLargeTittle,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              children: const [
+                Icon(
                   Icons.power_settings_new,
                   color: Colors.grey,
                   size: 25,
