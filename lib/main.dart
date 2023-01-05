@@ -59,7 +59,7 @@ class _MyAppState extends State<MyApp> {
         Locale('ar', ''),
         //Locale('en', ''), // English, no country code
       ],
-      home: TabsScreen(),
+      home: const TabsScreen(),
       routes: {
         TabsScreen.routeName: (context) => const TabsScreen(),
       },
