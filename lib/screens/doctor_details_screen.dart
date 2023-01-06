@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-
+import 'package:article/article.dart';
 import '../models/constants.dart';
 
 class DoctorDetailsScreen extends StatefulWidget {
@@ -20,7 +20,7 @@ class _DoctorDetailsScreenState extends State<DoctorDetailsScreen> {
         backgroundColor: Colors.grey[200],
         centerTitle: true,
         elevation: 0,
-        title: const Text('د/ مجدي حبيب يعقوب', style: kXLargeTittle),
+        title: const Text('أعـرف طبيبــك', style: kXLargeTittle),
       ),
       body: SingleChildScrollView(
         child: SizedBox(
@@ -99,6 +99,20 @@ class _DoctorDetailsScreenState extends State<DoctorDetailsScreen> {
                           ],
                         ),
                         const SizedBox(height: 20),
+                        // Used article package to add line spacing to the text below
+                        // Article(
+                          
+                        //     maxWidth: 300,
+                        //     header: Column(children: const [
+                        //       H1(child: 'الدكتور / مجدي حبيب يعقوب'),
+                        //       H2(child: 'استشاري'),
+                        //     ]),
+                        //     body: const H5(
+                        //       child:
+                        //           "مجدي حبيب يعقوب (مواليد 16 نوفمبر 1935) هو بروفيسور مصري، وجراح قلب بارز. من مواليد مدينة بلبيس، محافظة الشرقية، مصر، لعائلة قبطية أرثوذكسية، وتنحدر أصولها من المنيا. درس الطب في جامعة القاهرة، وتعلم في شيكاغو، ثم انتقل إلى بريطانيا في عام 1962 ليعمل في مستشفى الصدر بلندن، ثم أصبح أخصائي جراحات القلب والرئتين في مستشفى هارفيلد .",
+                        //     ),
+                        //     footer: const H6(child: 'قم بحجز موعدك الآن')),
+                        // old code before using article package
                         const Text(
                           'الدكتور / مجدي حبيب يعقوب',
                           style: kXLargeTittle,

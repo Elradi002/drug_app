@@ -1,7 +1,8 @@
 import 'package:drug_app/screens/tabs_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
+import './screens/doctor_details_screen.dart';
+import './screens/splash_screen.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatefulWidget {
@@ -59,7 +60,7 @@ class _MyAppState extends State<MyApp> {
         Locale('ar', ''),
         //Locale('en', ''), // English, no country code
       ],
-      home: const TabsScreen(),
+      home: const SplashScreen(),
       routes: {
         TabsScreen.routeName: (context) => const TabsScreen(),
       },
