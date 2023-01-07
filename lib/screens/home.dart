@@ -37,11 +37,11 @@ class _HomeState extends State<Home> {
               const SizedBox(
                 height: 10,
               ),
-              SliderCard(),
-              SizedBox(
+              const SliderCard(),
+              const SizedBox(
                 height: 10,
               ),
-              const Text('مكتبة عافر', style: kXLargeTittle),
+              const Text('مشروع عافر', style: kLargeTittle),
               Container(
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -50,9 +50,9 @@ class _HomeState extends State<Home> {
                 margin: const EdgeInsets.all(10),
                 padding: const EdgeInsets.all(10),
                 width: 170,
-                height: 70,
+                height: 90,
                 child: const Text(
-                  'محتوي مفيد .....',
+                  'يهدف المشروع لثقافة التثقيف النفسي وهو جانب من جوانب العلاج الذى يقدم المعلومات والتوعيةوالدعم للألشخاص الذين يتلقون العلاج من ادمان المخدرات او الكحول او السلوكيات القهرية.',
                   style: kDetailsText,
                 ),
               )

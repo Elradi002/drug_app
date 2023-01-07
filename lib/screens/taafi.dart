@@ -1,5 +1,6 @@
 import 'package:drug_app/models/constants.dart';
 import 'package:drug_app/models/doctor.dart';
+import 'package:drug_app/screens/doctor_details_screen.dart';
 import 'package:flutter/material.dart';
 
 class Taafi extends StatelessWidget {
@@ -62,10 +63,11 @@ class Taafi extends StatelessWidget {
             itemBuilder: (ctx, index) {
               return InkWell(
                 onTap: () {
-                  // Navigator.of(context).pushNamed(
-                  //   FoundItemDetailsScreen.routeName,
-                  //   arguments: index,
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const DoctorDetailsScreen()),
+                  );
                 },
                 child: Padding(
                   padding: const EdgeInsets.all(5),

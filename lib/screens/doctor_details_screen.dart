@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:article/article.dart';
+
 import '../models/constants.dart';
 
 class DoctorDetailsScreen extends StatefulWidget {
@@ -17,10 +17,14 @@ class _DoctorDetailsScreenState extends State<DoctorDetailsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey[200],
-        centerTitle: true,
+        iconTheme: const IconThemeData(color: Colors.teal),
         elevation: 0,
-        title: const Text('أعـرف طبيبــك', style: kXLargeTittle),
+        centerTitle: true,
+        title: const Text(
+          'أعـرف طبيبــك',
+          style: kXLargeTittle,
+        ),
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       ),
       body: SingleChildScrollView(
         child: SizedBox(
@@ -101,7 +105,7 @@ class _DoctorDetailsScreenState extends State<DoctorDetailsScreen> {
                         const SizedBox(height: 20),
                         // Used article package to add line spacing to the text below
                         // Article(
-                          
+
                         //     maxWidth: 300,
                         //     header: Column(children: const [
                         //       H1(child: 'الدكتور / مجدي حبيب يعقوب'),
